@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:ital,wght@1,600&family=Libre+Franklin:wght@600&family=Oswald:wght@500&family=Raleway:wght@300;400;700&family=Righteous&display=swap');
+:root{
+    --background: linear-gradient(86deg, hsla(246, 95%, 49%, 0.651) 0%, hsla(246, 87%, 39%, 0.623) 100%);
+    --color-primary:#000000;
+    --color-secundary:#3877ffe3;
+    --boton-padding:20px 40px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+h1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 120px;
+}
+
+h2{
+    font-family: 'Libre Franklin', sans-serif; 
+    font-size: 55px;
+}
+
+span{
+    color: #ffffff;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color: var(--color-secundary);
+    font-size: 3.5rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--background), url('../assets/freecredit.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.spread{
+    transform: translate(0);
+} 
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav_items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav_item-cta{
+    border: 1px solid #fff;
+}
+
+.nav_items--footer{
+    padding: 10px;
+}
+
+.hero_container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero_texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero_tittle{
+    font-size: 80px;
+    margin-bottom: 15px;
+
+}
+.hero_subtitles{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero_cta{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.hero_wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    
+}
+
+/*about minuto 43!!! */
+
+.presentation{
+    padding-top: 0;
+    text-align:center;
+    background: #f2f2f2;
+}
+
+.presentation_picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.presentation_copy{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.presentation_cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+.presentation_video{
+    width: 500px;
+    height: 350px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about_img{
+    text-align: center;
+}
+
+.about_img--left{
+    text-align: left;
+
+}
+.about_picture{
+    max-width: 100%;
+}
+
+.about_paragraph{
+    margin-bottom: 20px ;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/*projects*/
+.projects{
+    background: #f2f2f2;
+    
+}
+
+.contenedor-imagenes{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+}
+
+.projects_img{
+    object-fit: contain;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;  
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 500px;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*  Aliados*/
+.aliado_grid{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.aliado_item{
+    width: 95%;
+    margin: 0 auto;
+    background:var(#fff);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px, 25px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.aliado_person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.aliado_img{
+    width: 100px;
+    min-width: 100px;
+    height: 75px;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #fff;
+    margin-right: 30px;
+}
+
+.aliado_name{
+    color: #0d0046c5;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mapa{
+    padding-top: 0;
+    text-align:center;
+    background: #f2f2f2;
+}
+
+/* Footer*/
+
+.footer{
+    background: var(--color-primary);
+    padding-bottom: 0.1px;
+    
+}
+
+.footer_title{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30;
+    text-align: center;
+}
+
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgb(255, 255, 255);
+    position: relative;
+}
+
+.formulario_input, .formulario_label, .formulario_submit {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.formulario_input{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    color: #fff
+}
+
+.formulario_input:focus{
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* .formulario_input:focus + .formulario_label{
+    margin-top: -135px;
+} */
+
+.formulario_label{
+    padding-left: 15px;
+    color: #fff;
+    position: absolute;
+    margin-top: -85px;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+
+.formulario_submit{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.fijar{
+    transform: translateY(-55px);
+}
+
+
+.footer_icons{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer_container-icons{
+    display: inline-block;
+    width: 70px;
+    max-width: 100%;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer_icon{
+    color:inherit;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.fab.footer_icon{
+    line-height: 60px;
+
+}
+
+/*responsive design(moviles)*/
+
+@media screen and (max-width: 800px) {
+    :root{
+        --boton-padding: 18px 40px;
+    }
+    
+    .nav{
+        justify-content: space-around;
+        width: 50vw;
+    }
+
+    .nav_item-cta{
+        border: none;
+    }
+
+    .nav_items{
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+        margin-right: 0;
+    }
+
+    .nav_items--footer{
+        border: none;
+    }
+
+    .hero{
+        height: 100vh;
+        background-image: var(--background), url('../assets/freecredit.jpeg');
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;
+    }
+    
+
+    .hero_texts{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .hero_tittle{
+        font-size: 2.5rem;
+    }
+
+    .hero_subtitles{
+        font-size: 1.5rem;
+    }
+
+    /*about*/
+
+    .presentation_copy{
+        width: 100%;
+    }
+
+    .presentation_video{
+        width: 250px;
+        height: 200px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    .about{
+        grid-template-columns: auto;
+    }
+
+    .about.container{
+        padding-top: 30px;
+    }
+
+    .contenedor-imagenes{
+        width: 100%;
+        font-size: 16px; 
+    }
+
+    .agregar-imagen{
+        width: 80%;
+     }
+
+    /*Aliado */
+
+
+    .aliado_grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+     .mapa{
+        justify-content: space-around;
+    }
+    .mapa_size{
+        width: 250px;
+        height: 250px;
+
+    }
+    /*Footer */
+
+    .footer_grid{
+        grid-template-columns: 1fr;
+
+    }
+    .footer_contact{
+        grid-row: 1/2;
+    }
+
+    .formulario{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --boton-padding: 18px 25px;
+    }
+
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 52px;
+    }
+    
+    h2{
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    body{
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .hero{
+        height: 100vh;
+        background-image: var(--background), url('../assets/freecredit.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;
+    }
+
+    .nav{
+        width: 50vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .nav_items{
+        padding: 0 10px;
+        border: 1;
+    }
+
+    .hero_texts{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .hero_tittle{
+        font-size: 2rem;
+    }
+
+     /*about*/
+
+     .presentation_picture{
+        width: 120px;
+        height: 120px;
+     }
+
+     .contenedor-imagenes{
+        width: 100%;
+        font-size: 16px; 
+    }
+
+     .agregar-imagen{
+        width: 80%;
+     }
+
+     .about{
+        row-gap: 60px;
+     }
+     .about.container{
+        padding-top: 10px;
+
+     }
+
+     /*project*/
+
+     .projects_grid{
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        height: auto;
+        grid-template-rows: repeat(5, 250px);
+        grid-auto-rows: 250px;
+        gap:10px
+     }
+
+     /*aliado*/
+
+     .aliado_item{
+        padding: 30px, 15px;
+     }
+
+     .aliado_person{
+        text-align: column;
+     } 
+
+     .aliado_name{
+        text-align: center;
+     }
+     .aliado_img{
+        margin: 0;
+        margin-bottom: 20px;
+     }
+
+     .mapa_size{
+
+        width: 250px;
+        height: 250px;
+    }
+
+    .projects_img{
+        width: 45%;
+    }
+
+    .footer_container-icons{
+        width: 80%;
+    }
+
+    .formulario{
+        width: 100%;
+        font-size: 16px;
+    }
+    
+}
